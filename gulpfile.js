@@ -1,5 +1,4 @@
 var gulp = require('gulp'),
-    //Browserify = require('browserify-gulp').default,
     path = require('path'),
     webpack = require('webpack');
 
@@ -29,11 +28,6 @@ var webpackConfig = {
 
 gulp.task('scripts', function() {
     webpack(webpackConfig).run(function() {});
-    /*
-    return gulp.src('js/main.js')
-        .pipe(webpack())
-        .pipe(gulp.dest('build/js'))
-    */
 });
 
 gulp.task('watch', function() {
@@ -41,4 +35,4 @@ gulp.task('watch', function() {
     gulp.watch('js/templates/*.hbs', ['scripts']);
 });
 
-gulp.task('default', ['scripts'/*, 'watch'*/]);
+gulp.task('default', ['scripts', 'watch']);
