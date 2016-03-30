@@ -56,17 +56,15 @@
 	datewidget.render();
 
 
-
-
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/*
+	/* WEBPACK VAR INJECTION */(function($) {/*
 	 * Just write the date into a div 
 	 * using handlebars.
 	 */
-	var $ = __webpack_require__(2),
+	var //$ = require('jquery'),
 	    Handlebars = __webpack_require__(3),
 	    template = __webpack_require__(34);
 
@@ -77,6 +75,7 @@
 	    }
 	};
 
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ },
 /* 2 */

@@ -8,5 +8,3 @@ var datewidget = require('./datewidget'),
 console.log(adder.add_this(constants.first, constants.second));
 
 datewidget.render();
-
-
